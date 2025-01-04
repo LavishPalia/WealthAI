@@ -3,8 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { LayoutDashboard, PenBox } from "lucide-react";
+import { CheckAndSaveUser } from "@/lib/CheckAndSaveUser";
 
-const Header = () => {
+const Header = async () => {
+  await CheckAndSaveUser();
+
   return (
     <div className="fixed top-0 bg-white/80 w-full backdrop-blur-md z-50 border-b">
       <nav className="px-4 py-4 flex items-center container mx-auto justify-between">

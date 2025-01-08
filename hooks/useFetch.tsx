@@ -2,7 +2,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 const useFetch = (cb: (...args: any[]) => Promise<any>) => {
-  const [data, setData] = useState();
+  const [data, setData] = useState<any>();
   const [loading, setLoading] = useState<boolean>();
   const [error, setError] = useState<any | null>();
 

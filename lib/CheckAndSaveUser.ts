@@ -15,7 +15,7 @@ export const CheckAndSaveUser = async () => {
       },
     });
 
-    console.log("loggedInUser", loggedInUser);
+    // console.log("loggedInUser", loggedInUser);
 
     if (loggedInUser) {
       return loggedInUser;
